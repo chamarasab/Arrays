@@ -24,8 +24,8 @@ int main() {
    */
    //above output at Capture13.png
 
-   int input[4];
-    printf("Enter 4 elements [ 2,3,7,4]: \n");
+   /*int input[4];
+    printf("Enter 4 elements  \n");
     for (int i = 0; i < 4; ++i) {
         printf("Enter %d th element : ",i);
         scanf("%d",&input[i]);                  //read the elements
@@ -33,6 +33,18 @@ int main() {
     }
     printf("You inserted : %d %d %d %d \n",input[0],input[1],input[2],input[3]);    //print elements
     //output at Capture14.png
+    */
+    float six_week_grade[5];
+    int number ;
+    for ( number = 0 ; number < 5 ; number = number + 1 )
+    {
+        printf( "Enter score for student %d : " , number + 1 );
+        scanf( "%f" , &six_week_grade[ number ] );
+    }
+    for ( number = 0 ; number < 5 ; number = number + 1 ){
+        printf("Student %d : %f\n",number+1,six_week_grade[number]);
+    }
+
 
     return 0;
 }
