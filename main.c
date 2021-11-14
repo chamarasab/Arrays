@@ -32,7 +32,7 @@ int main() {
 
     }
     printf("You inserted : %d %d %d %d \n",input[0],input[1],input[2],input[3]);    //print elements
-    //output at Capture 14
+    //output at Capture14.png
 
     return 0;
 }
