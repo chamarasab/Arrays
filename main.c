@@ -17,7 +17,10 @@ int main() {
    arr[2] = 2;
    arr[3] = arr[0];
 
-    printf("%d, %d, %d, %d",arr[0],arr[1],arr[2],arr[3]);
+    printf("%d, %d, %d, %d\n",arr[0],arr[1],arr[2],arr[3]);  //output at Capture12.png
 
+    printf("%pn \n",&arr);                                  //memory address of the array
+    printf("%pn, %pn, %pn, %pn\n",&arr[0],&arr[1],&arr[2],&arr[3]);  //print memory address of each array element
+                                                                    //output at Capture13.png
     return 0;
 }
