@@ -34,7 +34,7 @@ int main() {
     printf("You inserted : %d %d %d %d \n",input[0],input[1],input[2],input[3]);    //print elements
     //output at Capture14.png
     */
-    float six_week_grade[5];
+   /* float six_week_grade[5];
     int number ;
     for ( number = 0 ; number < 5 ; number = number + 1 )
     {
@@ -44,6 +44,27 @@ int main() {
     for ( number = 0 ; number < 5 ; number = number + 1 ){
         printf("Student %d : %f\n",number+1,six_week_grade[number]);
     }
+    */
+
+   //Two Dimensional Array
+
+   //int marks[2][2]={201,201},{65,75};
+
+    int ary[][2][3] = {
+            {               //[0]   -block
+                {1,2,3},        //[0][0]
+                {4,5,6}         //[0][1]
+            },
+            {               //[1]   -block
+                {7,8,9},        //[1][0][...]
+                {10,11,12}      //[1][1][...]
+            }
+    };
+    printf("%d %d\n", ary[0][0][0], ary[1][1][1]);
+
+
+    int arys[][3] = {6,5,4,3,2,1};
+    printf("%d %d", arys[0][0], arys[1][0]);
 
 
     return 0;
