@@ -50,7 +50,7 @@ int main() {
 
    //int marks[2][2]={201,201},{65,75};
 
-    int ary[][2][3] = {
+   /* int ary[][2][3] = {
             {               //[0]   -block
                 {1,2,3},        //[0][0]
                 {4,5,6}         //[0][1]
@@ -61,11 +61,84 @@ int main() {
             }
     };
     printf("%d %d\n", ary[0][0][0], ary[1][1][1]);
-
+    //printf("%d",ary[1].length);
 
     int arys[][3] = {6,5,4,3,2,1};
-    printf("%d %d", arys[0][0], arys[1][0]);
+    printf("%d %d\n", arys[0][0], arys[1][0]);
 
+    */
+
+    int buss[4][5]=
+    {
+            {8,12,9,7,10},
+            {5,7,3,0,4},
+            {20,15,18,21,14},
+            {6,9,5,8,11}
+    };
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 5; ++j) {
+            printf("%d ",buss[i][j],buss[i][j]);
+        }
+        printf("\n");
+    }
+//lecture's answer
+   /* int route, day = 0;
+
+    int bus[4][5];
+
+    for(day = 0; day <= 4; day = day + 1)
+    {
+        printf("Give the number of passengers for day %d: ", day+1);
+        for(route = 0; route <= 3; route = route + 1)
+            scanf("%d", &bus[route][day]);
+//scanf_s("%d", &bus[route][day], sizeof(bus));
+    }
+    printf("\n");
+    for(route = 0; route <= 3; route = route + 1)
+    {
+        for(day = 0; day <= 4; day = day + 1)
+            printf("[%d][%d]=%2d ", route, day, bus[route][day]);
+        printf("\n");
+    }*/
+/*
+    printf("\nArrays Basics\n");
+    int x[10]={0};
+    for (int i = 0; i < 10; ++i) {
+        printf("%d ",x[i]);
+    }
+    printf("\n");
+    for (int i = 0; i < 10; ++i) {
+        x[i] = i;
+    }
+    for (int i = 0; i < 10; ++i) {
+        printf("%d ",x[i]);
+    }
+
+    printf("\n\nEnter no. of subjects : ");
+    int count=5;
+    scanf("%d",&count);
+    int mark[5];
+
+    printf("Enter marks\n");
+    for (int i = 0; i < count; ++i) {
+        printf("Subject %d : ",i + 1);
+        scanf("%d",&mark[i]);
+    }
+
+    */
+
+    int x=29;
+    double y=3.14;
+    char c='N';
+
+    char *ptr=&c;
+    printf("Size of int: %d bytes\n"
+           "Size of double: %d bytes\n"
+           "Size of float: %d bytes\n"
+           "Size of character: %d byte"
+           ,sizeof(x),sizeof(y),sizeof(float),sizeof(c));
+
+    printf("The size of the character pointer is %d bytes",sizeof(ptr));
 
     return 0;
 }
